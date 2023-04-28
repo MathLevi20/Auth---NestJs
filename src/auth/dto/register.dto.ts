@@ -1,5 +1,3 @@
-import { IsNumberString } from 'class-validator';
-
 export class RegisterDto {
   acessToken?: string;
 

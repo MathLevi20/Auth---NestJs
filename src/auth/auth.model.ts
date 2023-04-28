@@ -6,19 +6,21 @@ export type AuthDocument = Auth & Document;
 @Schema()
 export class Auth {
   @Prop()
-  acessToken?: string;
+  id?: string;
   @Prop()
-  id: string;
-  @Prop()
-  username: string;
+  username?: string;
   @Prop()
   email: string;
   @Prop()
   password: string;
   @Prop()
-  firstName: string;
+  firstName?: string;
   @Prop()
-  lastName: string;
+  lastName?: string;
+  @Prop()
+  acessToken?: string;
+  @Prop()
+  refreshToken?: string;
 }
 
 export const AuthSchema = SchemaFactory.createForClass(Auth);
